@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article>
+  <header>
+    <h1 class="article-title">
+      <time class="publish-date" datetime="{{ page.date | date:'%F' }}">{{ page.date | date:'%F' }}</time>
+      <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+    </h1>
+  </header>
+  <div class="content-area">
+    {{ content }}
+  </div>
+  <footer>
+    <div class="social-button-area">
+      <div class="twitter-button-area">
+        <!-- twitter -->
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-count="vertical">ツイート</a>
+      </div>
+      <div class="hatena-bookmark-button-area">
+        <!-- hatena bookmark -->
+        <a href="http://b.hatena.ne.jp/entry/{{ site.url | remove_first:'http://' }}{{ page.url }}" class="hatena-bookmark-button" data-hatena-bookmark-title="{{ page.title }}" data-hatena-bookmark-layout="vertical-balloon" title="このエントリーをはてなブックマークに追加">
+          <img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;">
+        </a>
+      </div>
+      <div class="google-plus-button-area">
+        <!-- Google+ -->
+        <div class="g-plusone" data-size="tall" data-href="{{ page.url }}"></div>
+      </div>
+    </div>
+  </footer>
+</article>
