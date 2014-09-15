@@ -1,0 +1,36 @@
+name:
+  四角革命前夜
+
+url:
+  http://blog.sasaplus1.com
+permalink:
+  /:year/:month/:day/:title/
+timezone:
+  Asia/Tokyo
+
+paginate:
+  20
+paginate_path:
+  archive/:num
+
+markdown:
+  redcarpet
+redcarpet:
+  extensions:
+    - autolink
+    - strikethrough
+    - tables
+
+highlighter:
+  pygments
+
+gems:
+  - jekyll-sitemap
+
+exclude:
+  - vendor
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - Rakefile
