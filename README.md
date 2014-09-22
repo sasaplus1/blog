@@ -8,6 +8,7 @@ requirements:
 
 - rbenv
 - ruby-build
+- rbenv-gem-rehash
 
 install Ruby 2.1.1 by rbenv:
 
