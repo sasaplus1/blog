@@ -154,6 +154,29 @@ a:hover {
 	}
 }
 
+.main-area nav {
+	a:link {
+		color: #ff99ee;
+		-webkit-transition: color 0.3s ease-out 0;
+		-moz-transition: color 0.3s ease-out 0;
+		transition: color 0.3s ease-out 0;
+	}
+
+	a:visited {
+		color: #bbbbff;
+		-webkit-transition: color 0.3s ease-out 0;
+		-moz-transition: color 0.3s ease-out 0;
+		transition: color 0.3s ease-out 0;
+	}
+
+	a:hover {
+		color: #9999ff;
+		-webkit-transition: color 0.1s ease-out 0;
+		-moz-transition: color 0.1s ease-out 0;
+		transition: color 0.1s ease-out 0;
+	}
+}
+
 .section-title {
 	font-weight: lighter;
 }
