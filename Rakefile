@@ -15,24 +15,11 @@ end
 
 desc 'create new post'
 task :new do
-  def getTodayPostCount(filePath)
-    count = 1
-    while File.exist?(sprintf(filePath, count)) do
-      count += 1
-    end
-    count
-  end
-
-  def forceCreateFile(filePath, text)
-    FileUtils.makedirs(File.dirname(filePath))
-    File.write(filePath, text)
-    nil
-  end
-
   DATE = Time.now
-  PATH = "_posts/#{DATE.strftime '%Y/%m/%d'}/#{DATE.strftime '%F'}-%02d.md"
+  PATH = "_posts/#{DATE.strftime '%Y/%m/%d'}"
+  FILE = "#{DATE.strftime '%F'}-%02d.md"
 
-  path = sprintf(PATH, getTodayPostCount(PATH))
+  path = sprintf("#{PATH}/#{FILE}", Dir.glob("#{PATH}/*.md").length + 1)
   text = <<-'EOB'.gsub(/^\s+\|/, '')
     |---
     |layout: post
@@ -40,7 +27,8 @@ task :new do
     |---
   EOB
 
-  forceCreateFile(path, text)
+  FileUtils.makedirs(File.dirname path)
+  File.write(path, text)
 
   sh "$EDITOR #{path}"
 end
