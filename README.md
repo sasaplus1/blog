@@ -30,7 +30,7 @@ $ rake install
   - build blog
 - install
   - install required gems
-- new
+- new (default task)
   - create new post
 - preview
   - preview in local
