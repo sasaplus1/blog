@@ -8,6 +8,14 @@ permalink:
 timezone:
   Asia/Tokyo
 
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: 'post'
+
 paginate:
   20
 paginate_path:

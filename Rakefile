@@ -1,7 +1,7 @@
 require 'fileutils'
 
 task(:default).clear
-task default: :new
+task :default => 'new'
 
 desc 'build'
 task :build do
@@ -22,7 +22,6 @@ task :new do
   path = sprintf("#{PATH}/#{FILE}", Dir.glob("#{PATH}/*.md").length + 1)
   text = <<-'EOB'.gsub(/^\s+\|/, '')
     |---
-    |layout: post
     |title:
     |---
   EOB
