@@ -85,21 +85,20 @@ a:hover {
 	display: inline-block;
 
 	a {
-		border-radius: 5px;
+		border-radius: 50%;
 		color: #ffffff;
 		display: table-cell;
 		font-size: 30px;
 		text-align: center;
-		text-shadow: 0 1px 1px #666666;
 		text-decoration: none;
 		vertical-align: middle;
 
 		width: 50px;
 		height: 50px;
 
-		-webkit-transition: box-shadow 0.1s ease-in 0;
-		-moz-transition: box-shadow 0.1s ease-in 0;
-		transition: box-shadow 0.1s ease-in 0;
+		-webkit-transition: all 0.1s ease-in 0;
+		-moz-transition: all 0.1s ease-in 0;
+		transition: all 0.1s ease-in 0;
 
 		@media only screen and (max-width: 500px - 1px) {
 			font-size: 20px;
@@ -112,13 +111,25 @@ a:hover {
 	.home:visited {
 		background-color: #ff99ee;
 	}
+	.home:hover {
+		background-color: #ffffff;
+		color: #ff99ee;
+	}
 	.twitter:link,
 	.twitter:visited {
 		background-color: #55acee;
 	}
+	.twitter:hover {
+		background-color: #ffffff;
+		color: #55acee;
+	}
 	.github:link,
 	.github:visited {
 		background-color: #000000;
+	}
+	.github:hover {
+		background-color: #ffffff;
+		color: #000000;
 	}
 	.qiita:link,
 	.qiita:visited {
@@ -126,17 +137,17 @@ a:hover {
 		font-family: Seravek, "Helvetica Neue", sans-serif;
 		font-weight: lighter;
 	}
+	.qiita:hover {
+		background-color: #ffffff;
+		color: #59bb0c;
+	}
 	.rss:link,
 	.rss:visited {
 		background-color: #ffa500;
 	}
-
-	.home:hover,
-	.twitter:hover,
-	.github:hover,
-	.qiita:hover,
 	.rss:hover {
-		box-shadow: 0 0 20px #ffffff inset;
+		background-color: #ffffff;
+		color: #ffa500;
 	}
 }
 
