@@ -257,6 +257,10 @@ a:hover {
 		font-family: menlo, Ricty, Inconsolata, Consolas, monospace;
 		font-size: 80%;
 	}
+
+	& + .highlight {
+		margin-top: 2em;
+	}
 }
 
 .social-button-area {
