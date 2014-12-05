@@ -241,6 +241,10 @@ a:hover {
 	pre, code {
 		font-family: menlo, Ricty, Inconsolata, Consolas, monospace;
 	}
+
+	li > p {
+		margin-bottom: 0;
+	}
 }
 
 .content-area .highlight {
