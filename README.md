@@ -19,7 +19,7 @@ $ rbenv install 2.1.1
 install bundler and install required gems by bundler:
 
 ```sh
-$ echo 'gem: --no-ri --no-rdoc' >> $HOME/.gemrc
+$ echo 'gem: --no-document' >> $HOME/.gemrc
 $ gem install bundler
 $ rake install
 ```
