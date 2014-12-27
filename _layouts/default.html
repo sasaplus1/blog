@@ -12,11 +12,12 @@
     <meta charset="utf-8">
     {% if page.title %}
     <title>{{ page.title }} - {{ site.name }}</title>
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
     {% else %}
     <title>{{ site.name }}</title>
+    <link rel="canonical" href="{{ site.url }}">
     {% endif %}
     <link rel="author" href="mailto:sasaplus1&#64;gmail.com">
-    <link rel="canonical" href="{{ site.url }}">
     <link rel="icon" type="image/png" href="/image/favicon.png">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
