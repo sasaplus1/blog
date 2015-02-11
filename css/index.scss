@@ -226,9 +226,8 @@ a:hover {
 	}
 
 	h2 {
-		background-color: #eeeeff;
-		border-radius: 3px;
-		padding: 0.2rem 0.4rem;
+		border-left: 3px solid #ddddff;
+		padding-left: 10px;
 	}
 
 	a {
@@ -276,6 +275,7 @@ a:hover {
 }
 
 .content-area .highlight {
+	background-color: #f9f9ff;
 	border-left: 3px solid #ddddff;
 	color: #000000;
 	overflow: scroll;
