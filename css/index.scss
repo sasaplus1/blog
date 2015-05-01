@@ -24,16 +24,16 @@ a {
 a:link,
 a:visited {
 	color: #ff99ee;
-	-webkit-transition: color 0.3s ease-out 0;
-	-moz-transition: color 0.3s ease-out 0;
-	transition: color 0.3s ease-out 0;
+	-webkit-transition: color 0.3s ease-out;
+	-moz-transition: color 0.3s ease-out;
+	transition: color 0.3s ease-out;
 }
 
 a:hover {
 	color: #9999ff;
-	-webkit-transition: color 0.1s ease-out 0;
-	-moz-transition: color 0.1s ease-out 0;
-	transition: color 0.1s ease-out 0;
+	-webkit-transition: color 0.2s ease-out;
+	-moz-transition: color 0.2s ease-out;
+	transition: color 0.2s ease-out;
 }
 
 .blog-title {
@@ -164,23 +164,23 @@ a:hover {
 .main-area nav {
 	a:link {
 		color: #ff99ee;
-		-webkit-transition: color 0.3s ease-out 0;
-		-moz-transition: color 0.3s ease-out 0;
-		transition: color 0.3s ease-out 0;
+		-webkit-transition: color 0.3s ease-out;
+		-moz-transition: color 0.3s ease-out;
+		transition: color 0.3s ease-out;
 	}
 
 	a:visited {
 		color: #bbbbff;
-		-webkit-transition: color 0.3s ease-out 0;
-		-moz-transition: color 0.3s ease-out 0;
-		transition: color 0.3s ease-out 0;
+		-webkit-transition: color 0.3s ease-out;
+		-moz-transition: color 0.3s ease-out;
+		transition: color 0.3s ease-out;
 	}
 
 	a:hover {
 		color: #9999ff;
-		-webkit-transition: color 0.1s ease-out 0;
-		-moz-transition: color 0.1s ease-out 0;
-		transition: color 0.1s ease-out 0;
+		-webkit-transition: color 0.1s ease-out;
+		-moz-transition: color 0.1s ease-out;
+		transition: color 0.1s ease-out;
 	}
 }
 
