@@ -2,51 +2,18 @@
 layout: default
 ---
 <div>
-  <h2 class="section-title">最近の記事</h2>
-  <nav>
-    <ul>
-    {% for post in site.posts limit:5 %}
-      <li>
-        <time datetime="{{ post.date | date:'%F' }}">{{ post.date | date:'%F' }}</time>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-    </ul>
-  </nav>
-</div>
-<div>
   <h2 class="section-title">記事の一覧</h2>
-  <p>{{ paginator.page }} / {{ paginator.total_pages }}</p>
-  <nav>
+  <p class="page-info">{{ paginator.page }} / {{ paginator.total_pages }}</p>
+  {% include pager.html %}
+  <nav class="article-list">
     <ul>
       {% for post in paginator.posts limit:20 %}
       <li>
-        <time datetime="{{ post.date | date:'%F' }}">{{ post.date | date:'%F' }}</time>
         <a href="{{ post.url }}">{{ post.title }}</a>
+        <time datetime="{{ post.date | date:'%F' }}">{{ post.date | date:'%F' }}</time>
       </li>
       {% endfor %}
     </ul>
   </nav>
-  <nav>
-    <ul class="pagination-list">
-      <li>
-      {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-        <a href="/">新しい記事へ</a>
-        {% else %}
-        <a href="{{ paginator.previous_page_path }}">新しい記事へ</a>
-        {% endif %}
-      {% else %}
-        新しい記事へ
-      {% endif %}
-      </li>
-      <li>
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}">古い記事へ</a>
-      {% else %}
-        古い記事へ
-      {% endif %}
-      </li>
-    </ul>
-  </nav>
+  {% include pager.html %}
 </div>

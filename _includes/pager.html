@@ -1,0 +1,22 @@
+<nav>
+  <ul class="pagination-list clearfix">
+    <li class="pagination-newer">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+      <a href="/">新しい記事へ</a>
+      {% else %}
+      <a href="{{ paginator.previous_page_path }}">新しい記事へ</a>
+      {% endif %}
+    {% else %}
+      新しい記事へ
+    {% endif %}
+    </li>
+    <li class="pagination-older">
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}">古い記事へ</a>
+    {% else %}
+      古い記事へ
+    {% endif %}
+    </li>
+  </ul>
+</nav>
