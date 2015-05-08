@@ -196,13 +196,62 @@ a:hover {
 
 .section-title {
 	font-weight: lighter;
+	text-align: center;
+}
+
+.page-info {
+	text-align: center;
 }
 
 .pagination-list {
 	padding: 0;
 
+	.pagination-newer, .pagination-older {
+		display: block;
+	}
+
+	.pagination-newer {
+		float: left;
+	}
+
+	.pagination-older {
+		float: right;
+	}
+}
+
+.article-list {
+	margin: 0 auto;
+	width: $content-width - 50;
+
+	@media only screen and (max-width: 800px - 1px) {
+		width: auto;
+	}
+
+	time {
+		color: #bbbbbb;
+		float: right;
+
+		@media only screen and (max-width: 800px - 1px) {
+			display: none;
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		@media only screen and (max-width: 800px - 1px) {
+			margin-left: 1.5em;
+		}
+	}
+
 	li {
-		display: inline;
+		list-style-type: none;
+		line-height: 1.5;
+
+		@media only screen and (max-width: 800px - 1px) {
+			list-style-type: disc;
+		}
 	}
 }
 
@@ -213,6 +262,7 @@ a:hover {
 
 	@media only screen and (max-width: 500px - 1px) {
 		border-left: none;
+		padding-left: 0;
 		text-align: center;
 	}
 }
