@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head prefix="og: http://ogp.me/ns#">
+<html prefix="og: http://ogp.me/ns#">
+  <head>
     {% if page.title %}
       {% capture title %}{{ page.title }}{% endcapture %}
       {% capture description %}{{ content | strip_html | escape_once | truncatewords: 20 }}{% endcapture %}
