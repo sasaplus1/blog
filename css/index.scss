@@ -3,6 +3,12 @@
 
 $content-width: 800px;
 
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
 body {
 	background-color: #ffffff;
 	color: #000000;
